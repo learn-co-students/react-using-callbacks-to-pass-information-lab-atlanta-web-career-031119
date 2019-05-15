@@ -34,14 +34,17 @@ Because passing information between children components is taboo in React, (i.e.
 passing information between `ColorSelector` and a `Cell`), we need to make sure
 that the following is implemented:
 
-- `ColorSelector` has a way to set some 'selected color' in `Matrix` when a user selects a color
+- `ColorSelector` has a way to set some 'selected color' in `Matrix` when a user
+selects a color
 - `Cell` has a way to know what the current selected color is when it is clicked
 
 Using callbacks, we can do both of these things pretty easily!
 
 ## Deliverables
 
-**Note:** This lab involves rendering 100,000 `Cell` components, and may cause performance issues for older Macbooks. For a more performant lab experience, in `src/index.js`, replace:
+**Note:** This lab involves rendering 100,000 `Cell` components, and may cause
+performance issues for older Macbooks. For a more performant lab experience,
+in `src/index.js`, replace:
 
 ```js
 ReactDOM.render(<Matrix values={chromeBoi} />, document.getElementById('root'));
